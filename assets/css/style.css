@@ -1089,7 +1089,7 @@ section {
   font-size: 13px;
 }
 
-#contact .php-email-form .error-message {
+#contact .php-email-form .sent-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1098,7 +1098,7 @@ section {
   font-weight: 600;
 }
 
-#contact .php-email-form .error-message br + br {
+#contact .php-email-form .sent-message br + br {
   margin-top: 25px;
 }
 
