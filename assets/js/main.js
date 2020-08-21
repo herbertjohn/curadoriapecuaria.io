@@ -139,24 +139,24 @@
 
   // Porfolio isotope and filter
   $(window).on('load', function() {
-    var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item',
+    var classificadosIsotope = $('.classificados-container').isotope({
+      itemSelector: '.classificados-item',
       layoutMode: 'fitRows'
     });
 
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
+    $('#classificados-flters li').on('click', function() {
+      $("#classificados-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
 
-      portfolioIsotope.isotope({
+      classificadosIsotope.isotope({
         filter: $(this).data('filter')
       });
       aos_init();
     });
   });
 
-  // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
+  // classificados details carousel
+  $(".classificados-details-carousel").owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,
